@@ -127,20 +127,6 @@ header .navbar a:hover{
 }
 
 
-.social-icons {
-  display: flex;
-  gap: 20px;
-}
-
-.social-icons a {
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.social-icons a:hover {
-  color: #4234d4;
-}
 
 
 #phone a{
@@ -324,7 +310,6 @@ header .navbar a:hover{
     align-items: center;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
    
 }
 
@@ -585,3 +570,357 @@ header .navbar a:hover{
     background: #ee4924;
     color: #fff;
 }
+
+
+
+
+
+/* ----------------------------------------menu----------- */
+#menu11 {
+    background: #f4f2ed;
+    padding: 5rem 0;
+    text-align: center;
+    direction: rtl; 
+    margin-top: -10px;
+}
+
+#menu11 .title11 h2 {
+    color: #383848;
+    font-size: 25px;
+}
+
+#menu11 .title11 p {
+    color: #9a9a9a;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#menu11 .menu-items11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu11 .menu-items11 .menu-item11 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse; 
+    margin: 40px;
+    text-align: right; 
+}
+
+#menu11 .menu-items11 .menu-item11 img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px; 
+    border-radius: 50%;
+    
+}
+
+#menu11 .menu-items11 .menu-item11 h3 {
+    color: #383848;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+    font-size: 17px;
+    text-align: right;
+}
+
+#menu11 .menu-items11 .menu-item11 span {
+    position: absolute;
+    left: 0px; 
+    top: 0;
+    color: #ee4924;
+    font-size: 14px;
+}
+
+#menu11 .menu-items11 .menu-item11 p {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: right;
+}
+
+#menu11 .btn {
+    display: block;
+    margin: auto;
+    border: none;
+    margin-top: 30px;
+}
+
+/* ------------------------------------------------------------------------gallery */
+#gallery {
+    /*background: url("images/black\ background.jpg") center center/cover;*/
+    padding: 8rem 0 6rem;
+    text-align: center;
+  }
+ 
+  #gallery p{
+    font-size: 30px;
+    color: #000;
+    margin-top: 10px; 
+
+  }
+
+  #gallery img {
+    width: 300px;
+    margin-top: 0px; 
+    text-align: center;
+}
+
+  #gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #gallery .img-gallery img {
+    margin: 20px;
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+  }
+  
+  
+
+
+
+  
+  
+/*----------------------------------------- footer---------------*/
+footer {
+    background-color: #121C27;
+    color: white;
+    padding: 40px 0 20px; 
+  }
+  
+  .footer-container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #555;
+    width: 100%; 
+    padding: 0px 10px 20px 10px;
+    height: 80px;
+  }
+  
+  .footer-top img {
+    width: 90px;
+  }
+  
+  .social-icons-footer {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .social-icons-footer span {
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  .social-icons-footer a {
+    margin: 0 10px;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    background: #262e3c;
+    padding: 10PX;
+    border-radius: 50%;
+    gap: 2px;
+  }
+  .social-icons-footer a:hover{
+  background: #ee4924;
+  color: #fff;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+  
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    font-size: 14px;
+    
+  }
+  
+  .footer-section p{
+    padding-bottom: 20px;
+    color: #acabab;
+  }
+  .footer-section .contact i{
+    color: #8a8a8a;
+  }
+  .footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ee4924;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px; 
+    border-top: 1px solid #555;
+    width: 100%; 
+    padding: 10px 10px 0px 20px;
+    font-size: 14px;
+  }
+  
+  .footer-bottom SPAN{
+  color: #ee4924;
+  }
+  .footer-bottom span:hover{
+    color: #fff;
+  }
+  .policy-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .policy-links li {
+    margin: 0 10px;
+  }
+  
+  .policy-links li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .policy-links li a:hover {
+    color: #ee4924;
+  }
+  
+  .footer-section.subscribe {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent; 
+  }
+  
+  .subscribe-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent; 
+    color: #fff; 
+  }
+  
+  .subscribe-box button {
+    background-color: transparent; 
+    color: #ee4924; 
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    flex-shrink: 0; 
+  
+  }
+  
+  .subscribe-box button i {
+    font-size: 18px;
+  }
+  
+  .subscribe-box button:hover {
+    background-color: transparent; 
+    color: #e04e50; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* شاشة التحميل */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 9999;
+}
+
+.loading-screen img {
+    width: 300px; 
+}
+
+.loading-screen p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 10px; 
+    animation: blink 1.5s infinite; 
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+    /* تأثير دوران */
+    /*@keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }*/
+
+    

@@ -11,8 +11,6 @@ let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 let phBtn = document.querySelectorAll('.ph-btn');
 
-
-
 window.onscroll = () =>{
     searchBtn.classList.remove('fa-times');
     searchBar.classList.remove('active');
@@ -40,8 +38,7 @@ window.addEventListener("scroll", () => {
    }
 });
 
-
 menu.addEventListener('click', () =>{
     menu.classList.toggle('fa-times');
     navbar.classList.toggle('active');
-});
+}); 
