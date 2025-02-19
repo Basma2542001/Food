@@ -36,6 +36,35 @@
  font-size: 25px;
 }
 
+#aboutabout {
+    /*background: url("images/black\ background.jpg") center center/cover;*/
+    padding: 8rem 0 6rem;
+    text-align: center;
+  }
+ 
+  #aboutabout p{
+    font-size: 30px;
+    color: #000;
+    margin-top: 10px; 
+
+  }
+
+  #aboutabout img {
+    width: 300px;
+    margin-top: 0px; 
+    text-align: center;
+}
+
+#aboutabout .ptext{
+  font-size: 14px;
+    text-align: center;
+    width: 80%;  
+    margin: 0 auto; 
+    padding: 20px;  
+}
+
+
+
 
 .about-section {
     display: flex;
@@ -384,6 +413,74 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
     }
+
+
+    /*---------------------------------------------- services about---------*/
+
+
+    
+        .container-services {
+          direction: rtl;
+
+            width: 80%;
+            margin: auto;
+            text-align: center;
+        }
+       
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .icons {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .icon-box {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        .icon-box img {
+            width: 60px;
+            height: 60px;
+            margin-left: 10px;
+            border: 1px solid #ee4924;
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .icon-box.left img {
+            margin-left: 0;
+            margin-right: 10px;
+        }
+        .icon-box.left div {
+            text-align: left;
+        }
+        .icon-box.right div {
+            text-align: right;
+        }
+        .icon-box h3 {
+            margin: 0;
+            color: #000;
+            font-size: 18px;
+        }
+        .icon-box p {
+            color: #666;
+            font-size: 14px;
+            margin: 5px 0 0;
+        }
+        .center-image {
+            width: 35%;
+            text-align: center;
+            box-shadow: 0px 2px 5px  rgba(0, 0, 0, 0.5); /* الظل */
+
+        }
+        .center-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
 </style>
 <body>
 
@@ -416,7 +513,87 @@
 </section>
 
 <!---------------------------------------------------------- about------>
-<section class="about-section">
+<section id="aboutabout">
+  <div class="container">
+      <p>عن مطعمنا </p>
+      <img src="images/line2.png" >
+      <p class="ptext">مطعمنا هو وجهة مثالية لعشاق المأكولات الشهية، حيث يقدم مجموعة متنوعة من الأطباق المحلية والعالمية المُحضرة بأعلى معايير الجودة. بفضل أجوائه المريحة والخدمة الممتازة، يعد مطعمنا المكان المثالي للاستمتاع بوجبة لذيذة مع الأصدقاء والعائلة، يتميز مطعمنا بتقديم تجربة تناول طعام استثنائية بفضل خدماته المتكاملة التي تشمل طعامًا عالي الجودة، خدمة عملاء متميزة، وأجواء مريحة. يحرص المطعم على توفير تجربة طعام شاملة من خلال تنوع المأكولات، التوصيل السريع، وخيارات الحجز المريحة، مما يجعله الخيار الأمثل للمناسبات الخاصة أو الوجبات اليومية
+      </p>
+
+
+  </div>
+ </section> 
+
+
+
+
+ <div class="container-services">
+        
+  <div class="content">
+      <div class="icons">
+          <div class="icon-box left">
+              <div>
+                  <h3>الطعام الطازج</h3>
+                  <p>الأطباق الشهية المحضرة بأجود المكونات الطازجة</p>
+              </div>
+              <img src="images/restaurant.png" alt="Food">
+          </div>
+          <div class="icon-box left">
+              <div>
+                  <h3> مشروبات منعشه</h3>
+                  <p>استمتع بمشروباتنا الباردة المصنوعة من الفواكه الطبيعية</p>
+              </div>
+              <img src="images/cocktail.png" alt="Drinks">
+          </div>
+          <div class="icon-box left">
+              <div>
+                  <h3>توصيل للمنزل</h3>
+                  <p>نوصل لك وجباتك المفضلة الساخنة إلى باب منزلك</p>
+              </div>
+              <img src="images/man.png" alt="Delivery">
+
+          </div>
+      </div>
+      <div class="center-image">
+          <img src="images/طباخ.jpg" alt="Chef Holding Salad">
+      </div>
+      <div class="icons">
+          <div class="icon-box right">
+              <img src="images/deadlines.png" alt="Events">
+              <div>
+                  <h3>جميع المناسبات</h3>
+                  <p>أجواء رائعة مع حفلات وعروض مميزة تناسب جميع المناسبات</p>
+              </div>
+          </div>
+          <div class="icon-box right">
+              <img src="images/cake.png" alt="sweets">
+              <div>
+                  <h3>جيمع الحلويات</h3>
+                  <p>  نقدم لك أشهى أنواع الحلويات المحضرة بعناية مع نكهات مخالفة</p>
+              </div>
+          </div>
+          <div class="icon-box right">
+              <img src="images/coffee-cup.png" alt="hot drinks">
+              <div>
+                  <h3>مشروبات ساخنة</h3>
+                  <p> نقدم أجود أنواع المشروبات الساخنة من قهوة،إسبريسو،كابتشينو</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="about-section">
     <div class="text-content">
         <h4>عن مطعمنا</h4>
         <h1>مرحبًا بكم في مطعمنا الفاخر
@@ -447,7 +624,7 @@
     <div class="image-content">
         <img src="images/شيف.jpg" alt="برجر">
     </div>
-</section>
+</section>-->
 
 
 <!----------------------------------------banner------------------->
@@ -497,8 +674,7 @@
 
 
 <!--------------------------------------------------------------------services------>
-<div class="containerservices">
-    <!-- العمود الشمال-->
+<!--<div class="containerservices">
     <div class="column left-column">
       <div class="icon-container">
         <div>
@@ -523,12 +699,10 @@
       </div>
     </div>
 
-    <!-- العمود الوسط-->
     <div class="column middle-column">
       <img src="images/breakfast1.jpg" alt="صورة">
     </div>
 
-    <!-- العمود اليمين -->
     <div class="column right-column">
       <div class="icon-container">
         <i class="fa-solid fa-ice-cream"></i>
@@ -553,8 +727,65 @@
         
       </div>
     </div>
-  </div>
+  </div>-->
 
+
+
+  <!--<div class="container-services">
+        
+    <div class="content">
+        <div class="icons">
+            <div class="icon-box left">
+                <div>
+                    <h3>الطعام الطازج</h3>
+                    <p>الأطباق الشهية المحضرة بأجود المكونات الطازجة</p>
+                </div>
+                <img src="images/restaurant.png" alt="Food">
+            </div>
+            <div class="icon-box left">
+                <div>
+                    <h3> مشروبات منعشه</h3>
+                    <p>استمتع بمشروباتنا الباردة المصنوعة من الفواكه الطبيعية</p>
+                </div>
+                <img src="images/cocktail.png" alt="Drinks">
+            </div>
+            <div class="icon-box left">
+                <div>
+                    <h3>توصيل للمنزل</h3>
+                    <p>نوصل لك وجباتك المفضلة الساخنة إلى باب منزلك</p>
+                </div>
+                <img src="images/man.png" alt="Delivery">
+
+            </div>
+        </div>
+        <div class="center-image">
+            <img src="images/طباخ.jpg" alt="Chef Holding Salad">
+        </div>
+        <div class="icons">
+            <div class="icon-box right">
+                <img src="images/deadlines.png" alt="Events">
+                <div>
+                    <h3>جميع المناسبات</h3>
+                    <p>أجواء رائعة مع حفلات وعروض مميزة تناسب جميع المناسبات</p>
+                </div>
+            </div>
+            <div class="icon-box right">
+                <img src="images/cake.png" alt="sweets">
+                <div>
+                    <h3>جيمع الحلويات</h3>
+                    <p>  نقدم لك أشهى أنواع الحلويات المحضرة بعناية مع نكهات مخالفة</p>
+                </div>
+            </div>
+            <div class="icon-box right">
+                <img src="images/coffee-cup.png" alt="hot drinks">
+                <div>
+                    <h3>مشروبات ساخنة</h3>
+                    <p> نقدم أجود أنواع المشروبات الساخنة من قهوة،إسبريسو،كابتشينو</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
 <!----------------------------------------footer---------------->
 <footer>
     <div class="footer-container">

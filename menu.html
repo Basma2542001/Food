@@ -46,29 +46,45 @@
 }
 
 #menu22 .title22 h2 {
-    color: #383848;
+    color: #fff; 
     font-size: 25px;
+    background: #ee4924; 
+    display: inline-block; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
 
+#menu22 .title33 h2 {
+    color: #fff; 
+    font-size: 25px;
+    background: #ee4924; 
+    display: inline-block; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    margin-top: 50px;
+}
 #menu22 .title22 p {
     color: #777777;
     font-weight: 500;
     font-size: 14px;
 }
 
+
 #menu22 .menu-items22 {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #494949;
 }
 
 #menu22 .menu-items22 .menu-item22 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse; 
     margin: 40px;
-    text-align: right; 
+    text-align: right;
+    min-height: 100px; 
 }
 
 #menu22 .menu-items22 .menu-item22 img {
@@ -76,24 +92,31 @@
     height: 80px;
     margin-left: 20px; 
     border-radius: 50%;
-    
+    flex-shrink: 0; 
+}
+
+#menu22 .menu-items22 .menu-item22 div {
+    flex-grow: 1; 
 }
 
 #menu22 .menu-items22 .menu-item22 h3 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     color: #383848;
     border-bottom: 1px dashed #c2bdbd;
     padding-bottom: 10px;
     position: relative;
     font-size: 17px;
     text-align: right;
+    width: 100%; 
 }
 
 #menu22 .menu-items22 .menu-item22 span {
-    position: absolute;
-    left: 0px; 
-    top: 0;
     color: #ee4924;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 200px; 
 }
 
 #menu22 .menu-items22 .menu-item22 p {
@@ -108,6 +131,7 @@
     border: none;
     margin-top: 30px;
 }
+
 </style>
 <body>
 
@@ -147,47 +171,46 @@
 <section id="menu22">
     <div class="container22">
         <div class="title22">
-            <h2>قائمة المطعم</h2>
-            <p>اطلب من القائمة الذي يناسبك</p>
+            <h2>لحم ودجاج</h2>
         </div>
         <div class="menu-items22">
             <div class="menu-items-left22">
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>مندي دجاج<span class="primary-text22">ج 160</span></h3>
+                        <p>أرز مندي - دجاجة كاملة - صوص طماطم جارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نصف مندي دجاج<span class="primary-text22">ج 80</span></h3>
+                        <p>أرز مندي - نص دجاجة - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>ربع مندي دجاج<span class="primary-text22">ج 42</span></h3>
+                        <p>أرز مندي - ربع دجاجة - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>حنيذ دجاج<span class="primary-text22">ج 160</span></h3>
+                        <p>أرز عربي - دجاجة كاملة - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نصف حنيذ دجاج <span class="primary-text22">ج 80</span></h3>
+                        <p>أرز عربي - نصف دجاجة - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
@@ -195,8 +218,8 @@
                 <div class="menu-item22">
 
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نفر لحم مندي<span class="primary-text22">ج 145</span></h3>
+                        <p>أرز مندي - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
@@ -205,8 +228,8 @@
             <div class="menu-items-right22">
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نفر لحم مندي سوبر<span class="primary-text22">ج 180</span></h3>
+                        <p>أرز مندي - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
@@ -214,44 +237,204 @@
                 <div class="menu-item22">
 
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نفر لحم مضغوط<span class="primary-text22">ج 145</span></h3>
+                        <p>أرز مضغوط - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>نفر لحم حنيذ<span class="primary-text22">ج 145</span></h3>
+                        <p>أرز عربي - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>ثمن تيس مندي<span class="primary-text22">ج 290</span></h3>
+                        <p>طبقين أرز عربي - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>ثمن تيس مضغوط<span class="primary-text22">ج 290</span></h3>
+                        <p>طبقين أرز مضغوط - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
                 <div class="menu-item22">
                     <div>
-                        <h3>وجبة مميزة <span class="primary-text22">ج.م 180.00</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, explicabo.</p>
+                        <h3>ثمن تيس حنيذ<span class="primary-text22">ج 290</span></h3>
+                        <p>طبقين أرز عربي - لحم - صوص طماطم حارة</p>
                     </div>
                     <img src="images/burger 5.jpg" alt="">
 
                 </div>
+            </div>
+        </div>
+
+        <div class="title33">
+            <h2>قسم البيتزا</h2>
+        </div>
+        <div class="menu-items22">
+            <div class="menu-items-left22">
+                <div class="menu-item22">
+                    <div>
+                        <h3>مرجريتا<span class="primary-text22">ج L:85 &nbsp;
+                            ج M:60</span></h3>
+                        <p>صوص البيتزا مع جبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                
+                <div class="menu-item22">
+                    <div>
+                        <h3>تشيكن باربكيو<span class="primary-text22">ج L:115 &nbsp; ج M:85 </span></h3>
+                        <p>صوص البيتزا وفلفل الوان وشرائح الزيتون وقطع صدور دجاج وجبنة مودزريلا وصوص باربكيو مدخن</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>تشيكن رانش<span class="primary-text22">ج L:115 &nbsp; ج M:85 </span></h3>
+                        <p>صوص البيتزا وفلفل الوان وشرائح الزيتون وقطع صدور دجاج وجبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>كرانشي<span class="primary-text22">ج L:115 &nbsp; ج M:85 </span></h3>
+                        <p>صوص البيتزا وشرائح الزيتون وقطع الاستربس وتركي مدخن مع جبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                
+            </div>
+
+            <div class="menu-items-right22">
+                <div class="menu-item22">
+
+                    <div>
+                        <h3>تشيز برجر<span class="primary-text22"> ج L:125 &nbsp; ج M:95</span></h3>
+                        <p>صوص البيتزا وفلفل الوان وشرائح الزيتون مع قطع برجر لحم ومودزريلا صوص تكساس</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>شاورما لحم<span class="primary-text22"> ج L: 120 &nbsp; ج M: 90</span></h3>
+                        <p>صوص البيتزا وصوص الطحينة وفلفل الوان والزيتون مع شرائح شاورما لحم وجبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+
+                    <div>
+                        <h3>جمبري رانش <span class="primary-text22"> ج L:130 &nbsp; ج M:100</span></h3>
+                        <p>صوص البيتزا وصوص رانش وفلفل الوان والزيتون ومشروم مع جمبري وجبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>خضراوات<span class="primary-text22"> ج L:90 &nbsp; ج M:65</span></h3>
+                        <p>صوص البيتزا وفلفل الوان وشرائح الزيتون ومشروم مع جبنة مودزريلا</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="title33">
+            <h2>قسم البرجر</h2>
+        </div>
+        <div class="menu-items22">
+            <div class="menu-items-left22">
+                <div class="menu-item22">
+                    <div>
+                        <h3>مشروم رانش<span class="primary-text22">ج 75</span></h3>
+                        <p> برجر محشي جبنة - مشروم - صوص رانش - صوص البيج تيستي</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                
+                <div class="menu-item22">
+                    <div>
+                        <h3>باربكيو رينج<span class="primary-text22">ج 65</span></h3>
+                        <p>برجر محشي جبنة - حلقات بصل - صوص باربكيو - صوص البيج تيستي - خس - طماطم</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>سموكد هاوس<span class="primary-text22">ج 70  </span></h3>
+                        <p> برجر محشي جبنة - سموكد تركي - صوص شيدر - صوص البيج تيستي - خس</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>ريببلك<span class="primary-text22">ج 65</span></h3>
+                        <p>برجر محشي جبنة - صوص شيدر - صوص البيج تيستي - خس - طماطم - بصل</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                
+            </div>
+
+            <div class="menu-items-right22">
+                <div class="menu-item22">
+
+                    <div>
+                        <h3>جوسي لوسي<span class="primary-text22"> ج 70</span></h3>
+                        <p>برجر محشي جبنة - مودزريلا ستيك - صوص شيدر - صوص البيج تيستي - خس</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+                </div>
+                
+                <div class="menu-item22">
+
+                    <div>
+                        <h3>ورلدوور<span class="primary-text22"> ج 70</span></h3>
+                        <p> برجر محشي جبنة - مودزريلا ستيك - سموكد تركي - صوص شيدر - صوص البيج تيستي - خس</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+                    <div>
+                        <h3>اورجينال<span class="primary-text22"> ج 60</span></h3>
+                        <p> برجر محشي جبنة - صوص البيج تيستي - خس - طماطم - بصل</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+
+                </div>
+                <div class="menu-item22">
+
+                    <div>
+                        <h3>جوسي لوسي<span class="primary-text22"> ج 70</span></h3>
+                        <p>برجر لحم محشي جبنة - مودزريلا ستيك - صوص شيدر - صوص البيج تيستي - خس</p>
+                    </div>
+                    <img src="images/burger 5.jpg" alt="">
+                </div>
+                
             </div>
         </div>
     </div>
