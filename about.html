@@ -193,7 +193,7 @@
 }
 
 .menuabout-item {
-    width: 50%;
+    width: 100%;
     height: 300px;
     position: relative;
     display: flex;
@@ -201,13 +201,13 @@
     background-size: cover;
     background-position: center;
     padding: 20px;
-    border-radius: 10px;
     overflow: hidden;
-    
+    background: #c34141;
+    margin-top: 50px;
 }
 
-.menuabout-item:nth-child(1) {
-    background-image: url('images/back.png');
+/*.menuabout-item:nth-child(1) {
+    background-image: url('images/black background.jpg');
 
 }
 
@@ -218,13 +218,13 @@
 .menuabout-item:nth-child(3) {
     background-image: url('images/black background.jpg');
 }
-
+*/
 .menuabout-item img {
-    width: 220px; 
-    height: 220px;
+    width: 270px; 
+    height: 270px;
     object-fit: cover;
     border-radius: 10px;
-    margin-left: -60px; 
+    margin-left: -30px; 
     align-self: flex-start; 
 }
 
@@ -268,17 +268,15 @@
     font-size: 14px;
 
 }
-.menuabout-content .buttonabout::before {
-    content: "← "; 
-    font-size: 12px;
-    transition: 0.2s;
+.buttonabout i {
+    font-size: 14px; 
+    margin-right: 10px;
 }
-
-
-.buttonabout:hover {
+.buttonabout:hover{
     background-color: #ee4924;
-    color: #fff;
 }
+
+
 
 @media (max-width: 768px) {
     .menuabout-container {
@@ -481,6 +479,41 @@
             width: 100%;
             border-radius: 10px;
         }
+
+        @media (max-width: 768px) {
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .feature {
+        width: 45%;
+    }
+    .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icon-box img {
+    width: 60px; 
+  }
+
+  .left-column,
+  .right-column {
+    margin: 0; 
+    width: 100%;
+  }
+
+  .center-image img {
+    width: 100%;
+  }
+
+}
 </style>
 <body>
 
@@ -630,17 +663,17 @@
 <!----------------------------------------banner------------------->
 <div class="menuabout-container">
     <div class="menuabout-item">
-        <img src="images/فراخ1.png" alt="وجبة الدجاج">
+        <img src="images/logo2.png" alt="بانر">
         <div class="menuabout-content">
-            <h2>وجبة دجاج</h2>
-            <p>طعم مقرمش من الخارج و طري من الداخل يجعلك ترغب بالمزيد</p>
-            <span class="priceabout"> 90 ج.م </span>
+            <h2>نحن هنا لخدمتك</h2>
+            <p> يعد مطعمنا المكان المثالي للاستمتاع بوجبة لذيذة مع الأصدقاء والعائلة</p>
+            <span class="priceabout"> خصم خاص </span>
             <br>
-            <a href="#" class="buttonabout">اطلب الآن</a>
+            <a href="#" class="buttonabout"> <i class="fas fa-phone"></i>تواصل معنا</a>
         </div>
     </div>
 
-    <div class="menuabout-item">
+    <!--<div class="menuabout-item">
         <img src="images/burger.png" alt="برجر لحم">
         <div class="menuabout-content">
             <h2>برجر لحم</h2>
@@ -649,7 +682,7 @@
             <br>
             <a href="#" class="buttonabout">اطلب الآن</a>
         </div>
-    </div>
+    </div>-->
 
     
 </div>
