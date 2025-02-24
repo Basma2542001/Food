@@ -159,6 +159,109 @@
     margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+    #menu22 .title22 h2,
+    #menu22 .title33 h2 {
+        
+        font-size: 17px;
+    }
+    #menu22 {
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+    }
+
+    .menu-items22 {
+      
+        flex-direction: column;
+        align-items: flex-end; /* يجعل العناصر تبدأ من اليمين */
+        margin-left: 10px;
+    }
+
+    .menu-items-left22,
+    .menu-items-right22,
+    .menu-items-right44 {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .menu-items-right44 .long-image {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* 🔹 جعل الصورة تلتصق باليمين */
+    #menu22 .menu-items22 .menu-item22 {
+        display: flex;
+        flex-direction: row-reverse; /* لضمان أن الصورة تكون في أقصى اليمين */
+        align-items: center;
+        justify-content: flex-start; /* يضمن أن النص بجانب الصورة مباشرةً */
+        text-align: right;
+        width: 100%;
+        padding: 5px 10px; /* تقليل المسافة الداخلية */
+        gap: 10px; /* تقليل المسافة بين الصورة والعناصر الأخرى */
+    }
+
+    /* 🔹 ضبط حجم الصورة وإزالتها من المنتصف */
+    #menu22 .menu-items22 .menu-item22 img {
+        width: 50px;
+        height: 50px;
+        margin: 0; /* إزالة أي هامش يجعل الصورة تبتعد عن اليمين */
+        flex-shrink: 0;
+    }
+
+    /* 🔹 جعل النص يأخذ المساحة المتبقية */
+    #menu22 .menu-items22 .menu-item22 div {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* 🔹 العنوان والسعر يكونان بجانب بعض */
+    #menu22 .menu-items22 .menu-item22 h3 {
+        font-size: 14px;
+        padding-bottom: 3px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%; /* تأكيد أن السعر يظل بجانب العنوان */
+        margin: 0;
+    }
+
+    /* 🔹 ضمان ظهور السعر بجانب العنوان مباشرةً */
+    #menu22 .menu-items22 .menu-item22 span {
+        font-size: 14px;
+        color: #ee4924;
+        font-weight: bold;
+        min-width: 60px; /* عرض ثابت لضمان التناسق */
+        margin-left: 90px; /* تحريك السعر إلى أقصى اليسار */
+        position: absolute;
+        left: -70px; /* ضبط الموقع بحيث تكون كل الأسعار في نفس العمود */
+    }
+
+    /* 🔹 تحسين تنسيق النص */
+    #menu22 .menu-items22 .menu-item22 p {
+        font-size: 12px;
+        margin-top: 3px; /* تقليل المسافة بين النص والعنوان */
+        line-height: 1.4;
+    }
+
+    /* 🔹 تحسين زر الطلب */
+    #menu22 .btn {
+        width: 80%;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .menu-items-right22 img,
+    .menu-items-left22 img,
+    .menu-items-right44 img
+    {
+        width:190px;
+        margin-right: 150px;
+    }
+}
+
+
 </style>
 <body>
 
@@ -207,7 +310,7 @@
                 <div class="menu-item22">
                     <div>
                         <h3>مندي دجاج<span class="primary-text22">160 ج </span></h3>
-                        <p>أرز مندي - دجاجة كاملة - صوص طماطم جارة</p>
+                        <p>أرز مندي - دجاجة كاملة - صوص طماطم حارة</p>
                     </div>
                     <img src="images/مندي دجاج.png" alt="">
 
@@ -612,7 +715,7 @@
             <h2>تورتة</h2>
         </div>
         <div class="menu-items22">
-            <div class="menu-items-right44">
+            <div class="menu-items-right22">
                 <img src="images/torta.png" alt="صورة طويلة" class="long-image">   
             </div>
             <div class="menu-items-left22">

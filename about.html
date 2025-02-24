@@ -65,7 +65,7 @@
 
 
 
-
+/*----------------------------------------------ABOUT SECTION ICON-----------*/
 .about-section {
     display: flex;
     align-items: center;
@@ -480,7 +480,7 @@
             border-radius: 10px;
         }
 
-        @media (max-width: 768px) {
+      /*  @media (max-width: 768px) {
     .features {
         flex-wrap: wrap;
         justify-content: center;
@@ -513,7 +513,181 @@
     width: 100%;
   }
 
+}*/
+
+
+/* شاشات أقل من 991px */
+@media (max-width: 991px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
+    .text-content p {
+        text-align: center;
+        direction: rtl;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        border-left: none;
+        border-bottom: 3px solid #ccc;
+        padding-bottom: 15px;
+        padding-left: 0;
+    }
+
+    .content {
+        padding-right: 0;
+        text-align: center;
+    }
 }
+
+/* شاشات أقل من 768px */
+@media (max-width: 768px) {
+    .container-services {
+        width: 95%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center; /* توسيط العناصر عموديًا */
+    }
+
+    .icon-box img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px; /* إضافة مسافة تحت الأيقونة */
+    }
+    
+    .icon-box.right{
+        margin-top: 40px;
+    }
+    .icon-box h3 {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .icon-box p {
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+    }
+
+    .center-image {
+        width: 80%;
+        margin-top: 20px;
+    }
+    #aboutabout .ptext{
+        font-size: 12px;
+        text-align: center;
+        width: 100%;  
+        margin: 0 auto; 
+        padding: 4px;  
+}
+    #aboutabout p{
+        font-size: 25px;
+        margin-top: 0px; 
+  }
+
+    #aboutabout img {
+       width: 200px;
+}
+    #galleryabout p{
+       font-size: 20px;
+       color: #000;
+       margin-top: 0px; 
+
+  }
+
+   #galleryabout img {
+      width: 250px;
+      margin-top: 0px; 
+      text-align: center;
+}
+}
+
+
+
+/* شاشات أقل من 450px */
+@media (max-width: 450px) {
+    .about-section {
+        padding: 20px;
+    }
+
+    .text-content h4 {
+        font-size: 14px;
+    }
+
+    .text-content p, .feature p {
+        font-size: 12px;
+    }
+
+    .image-content img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80px;
+    }
+
+    .feature-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon img {
+        max-width: 40px;
+    }
+
+    .content h2 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 12px;
+    }
+}
+
 </style>
 <body>
 

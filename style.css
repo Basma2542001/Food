@@ -1292,6 +1292,18 @@ footer {
         font-size: 12px;
         margin-bottom: 5px;
     }
+    #gallery p{
+        font-size: 25px;
+        color: #000;
+        margin-top: 10px; 
+    
+      }
+    
+      #gallery img {
+        width: 250px;
+        margin-top: 0px; 
+        text-align: center;
+    }
 }
 
 @media (max-width: 450px) {

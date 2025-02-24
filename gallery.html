@@ -81,7 +81,7 @@
         }
         .extra-gallery img {
             width: 100%;
-            height: auto;
+            height: 300px;
             object-fit: cover;
             border-radius: 10px;
             border: 4px solid #fff;
@@ -129,6 +129,29 @@
         .column .large-img {
             height: 415px;
         }
+
+        @media (max-width: 768px) {
+            .extra-gallery img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #fff;
+
+        }
+        .three-column-gallery {
+            display: grid;
+            grid-template-columns: 1fr  ;
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto auto 70px auto;
+        }
+        .three-column-gallery img {
+           width: 100%;
+           height: 100%;
+        }
+             }
 </style>
 </head>
 <body>
@@ -167,38 +190,38 @@
         <img src="images/breakfast1.jpg" alt="بوستر طويل" class="poster">
         <img src="images/breakfast2.jpg" alt="صورة 1" class="img1">
         <img src="images/breakfast3.jpg" alt="صورة 2" class="img2">
-        <img src="images/lunch1.jpg" alt="صورة 3" class="img3">
-        <img src="images/lunch2.jpg" alt="صورة 4" class="img4">
-        <img src="images/lunch3.jpg" alt="صورة 5" class="img5">
-        <img src="images/burger 5.jpg" alt="صورة 6" class="img6">
+        <img src="images/حنيذ دجاج.jpg" alt="صورة 3" class="img3">
+        <img src="images/dinner1.jpg" alt="صورة 4" class="img4">
+        <img src="images/حنيذ لحمه.jpg" alt="صورة 5" class="img5">
+        <img src="images/مندي دجاج.png" alt="صورة 6" class="img6">
     </div>
     
     <div class="extra-gallery">
-        <img src="images/breakfast1.jpg" alt="صورة إضافية 1">
-        <img src="images/breakfast2.jpg" alt="صورة إضافية 2">
-        <img src="images/breakfast3.jpg" alt="صورة إضافية 3">
-        <img src="images/burger 5.jpg" alt="صورة إضافية 4">
-        <img src="images/lunch1.jpg" alt="صورة إضافية 5">
-        <img src="images/lunch2.jpg" alt="صورة إضافية 6">
+        <img src="images/باربكيو رينج.webp" alt="صورة إضافية 1">
+        <img src="images/سموكد هاوس.webp" alt="صورة إضافية 2">
+        <img src="images/مشروم رانش.jpg" alt="صورة إضافية 3">
+        <img src="images/ريببلك.jpg" alt="صورة إضافية 4">
+        <img src="images/بررجر.jpg" alt="صورة إضافية 5">
+        <img src="images/برجرر.webp" alt="صورة إضافية 6">
     </div>
     
     <div class="large-gallery">
-        <img src="images/lunch3.jpg" alt="صورة كبيرة 1">
-        <img src="images/burger 5.jpg" alt="صورة كبيرة 2">
+        <img src="images/موهيتو.jpg" alt="صورة كبيرة 1">
+        <img src="images/بنانا كراميل.webp" alt="صورة كبيرة 2">
     </div>
 
     <div class="three-column-gallery">
         <div class="column">
-            <img src="images/breakfast1.jpg" alt="صورة 1">
-            <img src="images/breakfast2.jpg" alt="صورة 2">
+            <img src="images/كرانشي.jpg" alt="صورة 1">
+            <img src="images/نفر لحم مندي1.jpg" alt="صورة 2">
         </div>
         <div class="column">
-            <img src="images/breakfast3.jpg" alt="صورة كبيرة" class="large-img">
+            <img src="images/نفر لحم مضغوط.webp" alt="صورة كبيرة" class="large-img">
 
         </div>
         <div class="column">
-            <img src="images/lunch1.jpg" alt="صورة 3">
-            <img src="images/lunch2.jpg" alt="صورة 4">
+            <img src="images/نصف مندي دجاج.jpg" alt="صورة 3">
+            <img src="images/مندي دجاج.png" alt="صورة 4">
         </div>
     </div>
 
