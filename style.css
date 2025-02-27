@@ -77,7 +77,7 @@ body{
 #hed-content a{
     color: #fff;
     padding: 15px 20px 15px 20px;
-    border: 1px solid orange;
+    border: 1px solid #fc3104;
     background: rgb(0, 0, 0, 0.6);
     font-size: 1.5rem;
     text-decoration: none;
@@ -113,7 +113,7 @@ body{
     }
 }
 .offer{
-    color: orange;
+    color: #fc3104;
     font-size: 15px;
     margin-bottom: 50px;
 }
@@ -212,7 +212,7 @@ header .navbar a:hover{
     color: #fff;
     font-size: 20px;
     padding: 3px 15px 3px 15px;
-    border: 1px solid orange;
+    border: 1px solid #fc3104;
 }
 
 #phone a:hover{
@@ -510,7 +510,7 @@ h3 {
 
 p {
     font-size: 13px; 
-    color: #333; 
+    color: #222222; 
     margin-top: 5px;
 }
 
@@ -1613,10 +1613,6 @@ footer {
         font-size: 11px;
     }
 }
-
-
-
-
 
 
 
