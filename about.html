@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <title>Resturant</title>
 </head>
 <style>
@@ -189,12 +190,13 @@
     align-items: center;
     text-align: center;
     margin-top: 30px;
+    margin-left: -1px;
    
 }
 
 .menuabout-item {
     width: 100%;
-    height: 300px;
+    height: 350px;
     position: relative;
     display: flex;
     align-items: center;
@@ -202,30 +204,44 @@
     background-position: center;
     padding: 20px;
     overflow: hidden;
-    background: #c34141;
+    background: url("images/back9.jpg") center center/cover;
     margin-top: 50px;
 }
 
-/*.menuabout-item:nth-child(1) {
-    background-image: url('images/black background.jpg');
-
+.menuabout-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1;
 }
 
-.menuabout-item:nth-child(2) {
-    background-image: url('images/fire.jpg');
+.menuabout-item * {
+    position: relative;
+    z-index: 2;
 }
 
-.menuabout-item:nth-child(3) {
-    background-image: url('images/black background.jpg');
-}
-*/
 .menuabout-item img {
-    width: 270px; 
-    height: 270px;
+    width: 450px; 
+    height:450px;
     object-fit: cover;
     border-radius: 10px;
     margin-left: -30px; 
-    align-self: flex-start; 
+    align-self: flex-start;
+    margin-top: -80px; 
+    animation: pulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 .menuabout-content {
@@ -274,6 +290,7 @@
 }
 .buttonabout:hover{
     background-color: #ee4924;
+    color: #fff;
 }
 
 
@@ -285,10 +302,13 @@
     .menuabout-item {
         width: 100%;
     }
+    .menuabout-item img {
+       display: none; 
+}
 }
 
 
-
+/*-----------------------------------------------صور-------------------------*/
 #galleryabout {
     /*background: url("images/black\ background.jpg") center center/cover;*/
     padding: 8rem 0 6rem;
@@ -307,6 +327,21 @@
     margin-top: 0px; 
     text-align: center;
 }
+#galleryabout .img-galleryabout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px; 
+}
+
+#galleryabout .img-galleryabout img {
+    width: calc(100% / 3 - 20px); 
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
 
   #galleryabout .img-galleryabout {
     display: flex;
@@ -322,7 +357,7 @@
     border-radius: 15px;
   }
   
-  
+}
 
 /*---------------------------services about------------------*/
   .containerservices {
@@ -406,7 +441,7 @@
       color: red;
     }
 
-    /* Style for the icons */
+    /* الايقونات */
     .fa {
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
@@ -480,43 +515,8 @@
             border-radius: 10px;
         }
 
-      /*  @media (max-width: 768px) {
-    .features {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .feature {
-        width: 45%;
-    }
-    .content {
-    flex-direction: column;
-    align-items: center;
-  }
+    
 
-  .icon-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .icon-box img {
-    width: 60px; 
-  }
-
-  .left-column,
-  .right-column {
-    margin: 0; 
-    width: 100%;
-  }
-
-  .center-image img {
-    width: 100%;
-  }
-
-}*/
-
-
-/* شاشات أقل من 991px */
 @media (max-width: 991px) {
     .about-section {
         flex-direction: column;
@@ -554,7 +554,6 @@
     }
 }
 
-/* شاشات أقل من 768px */
 @media (max-width: 768px) {
     .container-services {
         width: 95%;
@@ -577,13 +576,13 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center; /* توسيط العناصر عموديًا */
+        justify-content: center; 
     }
 
     .icon-box img {
         width: 60px;
         height: 60px;
-        margin-bottom: 10px; /* إضافة مسافة تحت الأيقونة */
+        margin-bottom: 10px; 
     }
     
     .icon-box.right{
@@ -637,7 +636,6 @@
 
 
 
-/* شاشات أقل من 450px */
 @media (max-width: 450px) {
     .about-section {
         padding: 20px;
@@ -706,7 +704,7 @@
   
        
         <div id="phone">
-            <a href="tel:+123456789">+123456789</a>
+            <a href="tel:+201020304050">+201020304050</a>
         </div>
      </header>
 
@@ -733,26 +731,26 @@
 
 
 
-
+<!------------------------------------------صورة وايقونات------------------>
  <div class="container-services">
         
   <div class="content">
       <div class="icons">
-          <div class="icon-box left">
+          <div class="icon-box left" data-aos="fade-left">
               <div>
                   <h3>الطعام الطازج</h3>
                   <p>الأطباق الشهية المحضرة بأجود المكونات الطازجة</p>
               </div>
               <img src="images/restaurant.png" alt="Food">
           </div>
-          <div class="icon-box left">
+          <div class="icon-box left" data-aos="fade-left">
               <div>
                   <h3> مشروبات منعشه</h3>
                   <p>استمتع بمشروباتنا الباردة المصنوعة من الفواكه الطبيعية</p>
               </div>
               <img src="images/cocktail.png" alt="Drinks">
           </div>
-          <div class="icon-box left">
+          <div class="icon-box left" data-aos="fade-left">
               <div>
                   <h3>توصيل للمنزل</h3>
                   <p>نوصل لك وجباتك المفضلة الساخنة إلى باب منزلك</p>
@@ -765,21 +763,21 @@
           <img src="images/طباخ.jpg" alt="Chef Holding Salad">
       </div>
       <div class="icons">
-          <div class="icon-box right">
+          <div class="icon-box right" data-aos="fade-right">
               <img src="images/deadlines.png" alt="Events">
               <div>
                   <h3>جميع المناسبات</h3>
                   <p>أجواء رائعة مع حفلات وعروض مميزة تناسب جميع المناسبات</p>
               </div>
           </div>
-          <div class="icon-box right">
+          <div class="icon-box right" data-aos="fade-right">
               <img src="images/cake.png" alt="sweets">
               <div>
                   <h3>جيمع الحلويات</h3>
                   <p>  نقدم لك أشهى أنواع الحلويات المحضرة بعناية مع نكهات مخالفة</p>
               </div>
           </div>
-          <div class="icon-box right">
+          <div class="icon-box right" data-aos="fade-right">
               <img src="images/coffee-cup.png" alt="hot drinks">
               <div>
                   <h3>مشروبات ساخنة</h3>
@@ -837,163 +835,57 @@
 <!----------------------------------------banner------------------->
 <div class="menuabout-container">
     <div class="menuabout-item">
-        <img src="images/logo2.png" alt="بانر">
+        <img src="images/dish.png" alt="بانر">
         <div class="menuabout-content">
             <h2>نحن هنا لخدمتك</h2>
             <p> يعد مطعمنا المكان المثالي للاستمتاع بوجبة لذيذة مع الأصدقاء والعائلة</p>
-            <span class="priceabout"> خصم خاص </span>
+            <span class="priceabout">% خصم خاص </span>
             <br>
             <a href="#" class="buttonabout"> <i class="fas fa-phone"></i>تواصل معنا</a>
         </div>
-    </div>
-
-    <!--<div class="menuabout-item">
-        <img src="images/burger.png" alt="برجر لحم">
-        <div class="menuabout-content">
-            <h2>برجر لحم</h2>
-            <p>لحم مشوي طازج مغطى بالجبن الذائب والخضار الطازجة</p>
-            <span class="priceabout">59 ج.م</span>
-            <br>
-            <a href="#" class="buttonabout">اطلب الآن</a>
-        </div>
-    </div>-->
-
-    
+    </div>   
 </div>
 
+
+<section class="burger-section">
+    <div class="burger-card">
+        <img src="images/سموكد هاوس.webp" alt="Our Burgers">
+        <h3>أهداف مطعمنا</h3>
+        <p>نهدف إلى تقديم وجبات شهية بجودة عالية باستخدام أفضل المكونات الطازجة، مع ضمان تجربة طعام استثنائية، وخدمة راقية، وأجواء مريحة تلبي توقعات عملائنا وتفوقها</p>
+    </div>
+
+    <div class="burger-card2">
+        <img src="images/home_bg.jpeg" alt="Your Opinion is Important">
+        <h3>رؤية مطعمنا</h3>
+        <p>نسعى لأن نكون الخيار الأول لعشاق الطعام من خلال تقديم تجربة فريدة تجمع بين الجودة، الابتكار، والخدمة المتميزة، لنصبح علامة تجارية رائدة في عالم المطاعم</p>
+    </div>
+
+    <div class="burger-card">
+        <img src="images/lunch2.jpg" alt="Chicken Burgers">
+        <h3>رسالة مطعمنا</h3>
+        <p>نلتزم بتقديم أطباق لذيذة محضرة بحب وعناية، مع ضمان أعلى معايير الجودة والضيافة، لأننا نؤمن بأن الطعام تجربة تجمع الناس وتخلق لحظات لا تُنسى</p>
+    </div>
+</section>
 <!---------------------------------------gallery------------>
 
 <section id="galleryabout">
     <div class="container">
-        <p>بعض من أطباقنا اللذية</p>
-        <img src="images/line2.png" >
+        
 
         <div class="img-galleryabout">
-            <img src="images/burger 5.jpg" alt="gallery1">
-            <img src="images/breakfast1.jpg" alt="gallery2">
-            <img src="images/breakfast2.jpg" alt="gallery3">
-            <img src="images/breakfast3.jpg" alt="gallery4">
-            <img src="images/lunch1.jpg" alt="gallery5">
-            <img src="images/lunch2.jpg" alt="gallery6">
+            <img src="images/dinner1.jpg" alt="gallery1">
+            <img src="images/نصف مندي دجاج.jpg" alt="gallery2">
+            <img src="images/جمبري رانش.webp" alt="gallery3">
+            <img src="images/tor.jpg" alt="gallery4">
+            <img src="images/بنانا كراميل.webp" alt="gallery5">
+            <img src="images/بسبوسة بندق.jpg" alt="gallery6">
         </div>
     </div>
 </section>
 
 
-<!--------------------------------------------------------------------services------>
-<!--<div class="containerservices">
-    <div class="column left-column">
-      <div class="icon-container">
-        <div>
-          <h3>الاكل</h3>
-          <p>وصف للاكل</p>
-        </div>
-        <i class="fa-solid fa-utensils"></i>
-      </div>
-      <div class="icon-container">
-        <div>
-          <h3>مشروب</h3>
-          <p>وصف </p>
-        </div>
-        <i class="fa-solid fa-champagne-glasses"></i>
-      </div>
-      <div class="icon-container">
-        <div>
-          <h3>توصيل </h3>
-          <p>وصف </p>
-        </div>
-        <i class="fa-solid fa-motorcycle"></i>
-      </div>
-    </div>
 
-    <div class="column middle-column">
-      <img src="images/breakfast1.jpg" alt="صورة">
-    </div>
-
-    <div class="column right-column">
-      <div class="icon-container">
-        <i class="fa-solid fa-ice-cream"></i>
-        <div>
-          <h3>المثلجات</h3>
-          <p>وصف للمثلجات</p>
-        </div>
-      </div>
-      <div class="icon-container">
-        <i class="fa-solid fa-cake-candles"></i>
-        <div>
-          <h3>الحلويات</h3>
-          <p>وصف للحلوي</p>
-        </div>
-      </div>
-      <div class="icon-container">
-        <i class="fa-regular fa-calendar"></i>
-        <div>
-          <h3>مناسبات</h3>
-          <p>وصف للمناسبات</p>
-        </div>
-        
-      </div>
-    </div>
-  </div>-->
-
-
-
-  <!--<div class="container-services">
-        
-    <div class="content">
-        <div class="icons">
-            <div class="icon-box left">
-                <div>
-                    <h3>الطعام الطازج</h3>
-                    <p>الأطباق الشهية المحضرة بأجود المكونات الطازجة</p>
-                </div>
-                <img src="images/restaurant.png" alt="Food">
-            </div>
-            <div class="icon-box left">
-                <div>
-                    <h3> مشروبات منعشه</h3>
-                    <p>استمتع بمشروباتنا الباردة المصنوعة من الفواكه الطبيعية</p>
-                </div>
-                <img src="images/cocktail.png" alt="Drinks">
-            </div>
-            <div class="icon-box left">
-                <div>
-                    <h3>توصيل للمنزل</h3>
-                    <p>نوصل لك وجباتك المفضلة الساخنة إلى باب منزلك</p>
-                </div>
-                <img src="images/man.png" alt="Delivery">
-
-            </div>
-        </div>
-        <div class="center-image">
-            <img src="images/طباخ.jpg" alt="Chef Holding Salad">
-        </div>
-        <div class="icons">
-            <div class="icon-box right">
-                <img src="images/deadlines.png" alt="Events">
-                <div>
-                    <h3>جميع المناسبات</h3>
-                    <p>أجواء رائعة مع حفلات وعروض مميزة تناسب جميع المناسبات</p>
-                </div>
-            </div>
-            <div class="icon-box right">
-                <img src="images/cake.png" alt="sweets">
-                <div>
-                    <h3>جيمع الحلويات</h3>
-                    <p>  نقدم لك أشهى أنواع الحلويات المحضرة بعناية مع نكهات مخالفة</p>
-                </div>
-            </div>
-            <div class="icon-box right">
-                <img src="images/coffee-cup.png" alt="hot drinks">
-                <div>
-                    <h3>مشروبات ساخنة</h3>
-                    <p> نقدم أجود أنواع المشروبات الساخنة من قهوة،إسبريسو،كابتشينو</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>-->
-<!----------------------------------------footer---------------->
+ <!----------------------------------------footer---------------->
 <footer>
     <div class="footer-container">
       <div class="footer-top">
@@ -1039,7 +931,6 @@
               </ul>
           </div>
   
-          <!-- صندوق الاشتراك -->
           <div class="footer-section subscribe">
               <h2>اشترك معنا</h2>
               <p>أرسل عنوان بريدك الإلكتروني واتصل بنا لأي استفسارات</p>
@@ -1065,5 +956,12 @@
 
   <script src="res.js"></script>
 <script src="jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  </script>
 </body>
 </html>

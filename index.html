@@ -8,14 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <title>Resturant</title>
 </head>
 <body>
     
 
-     <!-- شاشة التحميل -->
+     <!-- صورة التحميل-->
 <div class="loading-screen">
     <img src="images/peppers-17616_256.gif" alt="جارِ التحميل...">
     <p>تحميل...</p>
@@ -23,13 +25,17 @@
 
 
 
-    <div id="hed">
-        <div id="hed-content">
-            <h1>استمتع بالطعم الأصلي مع أفضل المكونات وأشهى الأطباق </h1>
-            <h2>المذاق الذي تبحث عنه والخدمة التي تستحقها </h2>
-            <a href="menu.html"> شاهد القائمة</a>
-        </div>
+<div id="hed">
+    <div class="image">
+        <img src="images/dish2.png" alt="صورة طعام لذيذ">
     </div>
+    <div id="hed-content">
+        <h1>استمتع بالطعم الأصلي مع أفضل المكونات وأشهى الأطباق</h1>
+        <h2>المذاق الذي تبحث عنه والخدمة التي تستحقها</h2>
+        <h5 class="offer">عرض خاص علي الوجبات العائلية </h5>
+        <a href="menu.html">شاهد القائمة</a>
+    </div>
+</div>
 
     <header class=" header ">
         <div id="menu-bar" class="fas fa-bars"></div>
@@ -45,37 +51,37 @@
   
        
         <div id="phone">
-            <a href="tel:+123456789">+123456789</a>
+            <a href="tel:+201020304050">+201020304050</a>
         </div>
      </header>
     
-    
+     
     
 
 <!---------------------------------------------------------- about us---------------------->
     <section class="about-section">
         <div class="text-content">
             <h4>عن مطعمنا</h4>
-            <h1>مرحبًا بكم في مطعمنا الفاخر
+            <h1 data-aos="fade-right">مرحبًا بكم في مطعمنا الفاخر
                  <br>نقدم لكم أفضل الأكلات الشهية</h1>
-            <p>
+            <p data-aos="fade-right">
                 تنتشر رائحة الأكلات الشهية من مطعمنا الآن في الشوارع، تجعلك تشعر بالفضول لتذوق كل هذه الأكلات  في وقت واحد. نحن نقدم لك مزيجًا فريدًا من النكهات الأصيلة والمكونات الطازجة، مع لمسة من الإبداع في كل طبق. سواء كنت من عشاق البرجر المشوي، المكرونة الطازجة ، الأطباق التقليدية، أو المأكولات السريعة المحضرة بعناية، فإن كل وجبة تأخذك في رحلة من اللذة والسعادة مع كل لقمة 
             </p>
             <div class="features">
-                <div class="feature">
+                <div class="feature" data-aos="fade-right">
                     <img src="images/burger3.png" alt="مظهر جديد">
                     <p>طعام صحي</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-right">
                     <img src="images/grocery2.png" alt="أفضل المنتجات">
                     <p> أجود المنتجات </p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-right">
                     <img src="images/delivery-man.png" alt="توصيل سريع">
                     <p> توصيل طلباتك</p>
                 </div>
             </div>
-            <a href="#" class="btn">تعرف علينا</a>
+            <a href="about.html" class="btn" data-aos="fade-right">تعرف علينا</a>
 
            
 
@@ -86,10 +92,29 @@
         </div>
     </section>
 
-           
+      <!--------------------------------------------3 photo--------------------->
+    <section class="burger-section">
+        <div class="burger-card">
+            <img src="images/سموكد هاوس.webp" alt="Our Burgers">
+            <h3>أهداف مطعمنا</h3>
+            <p>نهدف إلى تقديم وجبات شهية بجودة عالية باستخدام أفضل المكونات الطازجة، مع ضمان تجربة طعام استثنائية، وخدمة راقية، وأجواء مريحة تلبي توقعات عملائنا وتفوقها</p>
+        </div>
 
+        <div class="burger-card2">
+            <img src="images/home_bg.jpeg" alt="Your Opinion is Important">
+            <h3>رؤية مطعمنا</h3>
+            <p>نسعى لأن نكون الخيار الأول لعشاق الطعام من خلال تقديم تجربة فريدة تجمع بين الجودة، الابتكار، والخدمة المتميزة، لنصبح علامة تجارية رائدة في عالم المطاعم</p>
+        </div>
+
+        <div class="burger-card">
+            <img src="images/lunch2.jpg" alt="Chicken Burgers">
+            <h3>رسالة مطعمنا</h3>
+            <p>نلتزم بتقديم أطباق لذيذة محضرة بحب وعناية، مع ضمان أعلى معايير الجودة والضيافة، لأننا نؤمن بأن الطعام تجربة تجمع الناس وتخلق لحظات لا تُنسى</p>
+        </div>
+    </section>
+      
+     
    
-
 <!----------------------------------------------------------------menu banner------------------>
     <div class="menu-container">
         <div class="menu-item">
@@ -107,7 +132,7 @@
             <img src="images/burger.png" alt="برجر لحم">
             <div class="menu-content">
                 <h2>برجر لحم</h2>
-                <p>لحم مشوي طازج مغطى بالجبن الذائب والخضار الطازجة</p>
+                <p>لحم مشوي طازج مغطى بالجبن السائح والخضار الطازجة</p>
                 <span class="price">59 ج.م</span>
                 <br>
                 <a href="#" class="button">اطلب الآن</a>
@@ -126,6 +151,61 @@
         </div>
     </div>
 
+      <!-------------------------------------slider -------------->
+    <div class="textslider">وجبتك جاهزة في دقايق لكن طعمها هيفضل في ذاكرتك </div>
+    <img src="images/line2.png" alt="خط مزخرف" class="decor-line">
+
+    
+    <div class="dish-slider-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/potattos.png" alt="Dish 1"></div>
+                        <h3>بطاطس مقرمشة</h3>
+                        <p>مقرمشة من الخارج ذهبية ولذيذة من الداخل،استمتع بلذةالقرمشة في كل قضمة</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/burgerr.png" alt="Dish 2"></div>
+                        <h3>برجر</h3>
+                        <p>نكهة غنية، مكونات طازجة، ومتعة في كل قطعة إنه البرجر الذي تبحث عنه</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/shawerma.png" alt="Dish 5"></div>
+                        <h3>شاورما</h3>
+                        <p>شاورما بتتبيلة فريدة، مشوية بإتقان ومحشوة، نكهة الشرق الأوسط في كل لفافة</p>
+                    </div>
+                </div> 
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/pizza.png" alt="Dish 3"></div>
+                        <h3>بيتزا</h3>
+                        <p>كل شريحة تحمل معها سحر الطعم الإيطالي الأصيل متّع حواسك مع كل قطعة</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/checkin.png" alt="Dish 4"></div>
+                        <h3>دجاج مقرمش</h3>
+                        <p>قرمشة تسمعها مع توابل غنية ونكهة لا تُنسى، دجاجنا المقرمش الأفضل بلا منازع</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="dish-box">
+                        <div class="dish-icon"><img src="images/meatdish.png" alt="Dish 5"></div>
+                        <h3>لحمه استيك</h3>
+                        <p>شاورما بتتبيلة فريدة، مشوية بإتقان ومحشوة، نكهة الشرق الأوسط في كل لفافة</p>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
     <!-------------------------------------------menu button------------>
     <!--<section id="new-food">
 
@@ -262,7 +342,7 @@
             </div>
             <div class="menu-items11">
                 <div class="menu-items-left11">
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up" >
                         <div>
                             <h3>مندي دجاج<span class="primary-text11">160 ج</span></h3>
                             <p>أرز مندي - دجاجة كاملة - صوص طماطم جارة</p>
@@ -270,7 +350,7 @@
                         <img src="images/مندي دجاج.png" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>مشروم رانش<span class="primary-text11">75 ج</span></h3>
                             <p> برجر محشي جبنة - مشروم - صوص رانش - صوص البيج تيستي</p>
@@ -278,7 +358,7 @@
                         <img src="images/مشروم رانش.jpg" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>مارجريتا<span class="primary-text11">ج L:85 &nbsp;
                                 ج M:60</span></h3>
@@ -287,7 +367,7 @@
                         <img src="images/مرجريتا.png" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>قهوة سادة<span class="primary-text11">10 ج</span></h3>
                             <p> فاتح - وسط - غامق</p>
@@ -295,7 +375,7 @@
                         <img src="images/قهوة سادة.jpg" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>تورته فراولة<span class="primary-text11">420 ج</span></h3>
                             <p> قطع من الفراولة + فانيليا + كريمة</p>
@@ -303,7 +383,7 @@
                         <img src="images/تورته فراولة.png" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>موهيتو<span class="primary-text11">20 ج</span></h3>
                             <p> نعناع + اسبرايت + ليمون</p>
@@ -313,7 +393,7 @@
                     </div>
                 </div>
                 <div class="menu-items-right11">
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>باربكيو رينج<span class="primary-text11">65 ج</span></h3>
                             <p>برجر محشي جبنة - حلقات بصل - صوص باربكيو - صوص البيج تيستي - خس - طماطم</p>
@@ -321,7 +401,7 @@
                         <img src="images/باربكيو رينج.webp" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
 
                         <div>
                             <h3>نفر لحم مندي<span class="primary-text11">145 ج</span></h3>
@@ -330,7 +410,7 @@
                         <img src="images/نفر لحم مندي.jpg" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>بسبوسة سادة <span class="primary-text11">56 ج</span></h3>
                             <p> تذوق الطعم الاصلي للبسبوسة </p>
@@ -338,7 +418,7 @@
                         <img src="images/بسبوسة سادة.webp" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>تشيكن باربكيو<span class="primary-text11">ج L:115 &nbsp; ج M:85 </span></h3>
                             <p>صوص البيتزا وفلفل الوان وشرائح الزيتون وقطع صدور دجاج وجبنة مودزريلا وصوص باربكيو مدخن</p>
@@ -346,15 +426,15 @@
                         <img src="images/تشيكن باربكيو.png" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
-                            <h3>بيري كولا<span class="primary-text11">20 ج</span></h3>
+                            <h3>بيج كولا<span class="primary-text11">20 ج</span></h3>
                             <p> كوكاكولا + بلوبيري</p>
                         </div>
                         <img src="images/بيري كولا.webp" alt="">
     
                     </div>
-                    <div class="menu-item11">
+                    <div class="menu-item11" data-aos="fade-up">
                         <div>
                             <h3>تورتة شوكولاتة ومانجا<span class="primary-text11">800 ج</span></h3>
                             <p> تورتة نصفين شوكولاتة + مانجا - كريمة </p>
@@ -376,19 +456,18 @@
         <div class="container">
             <p>كل صورة تحكي حكاية طعامنا المميز</p>
             <img src="images/line2.png" >
-
-            <div class="img-gallery">
-                <img src="images/burger 5.jpg" alt="gallery1">
-                <img src="images/breakfast1.jpg" alt="gallery2">
-                <img src="images/breakfast2.jpg" alt="gallery3">
-                <img src="images/breakfast3.jpg" alt="gallery4">
-                <img src="images/lunch1.jpg" alt="gallery5">
-                <img src="images/lunch2.jpg" alt="gallery6">
-            </div>
         </div>
     </section>
-
+    <div class="galleryhome">
+        <img src="images/قهوة تركي محوج.jpg" alt="بوستر طويل" class="poster">
+        <img src="images/dinner1.jpg" alt="صورة 1" class="img1">
+        <img src="images/سموكد هاوس.webp" alt="صورة 2" class="img2">
+        <img src="images/بسبوسة بندق.jpg" alt="صورة 3" class="img3">
+        <img src="images/تورتة لوتس.webp" alt="صورة 4" class="img4">
+    </div>
    
+
+
 
 
 <!-----------------------------------------------------------------------FOOTER----------->
@@ -437,7 +516,6 @@
               </ul>
           </div>
   
-          <!-- صندوق الاشتراك -->
           <div class="footer-section subscribe">
               <h2>اشترك معنا</h2>
               <p>أرسل عنوان بريدك الإلكتروني واتصل بنا لأي استفسارات</p>
@@ -489,14 +567,41 @@
 </script>
 
 <script>
-    // تأخير تحميل الصور لمدة 2 ثوانٍ بعد تحميل الصفحة بالكامل
+    // تأخير تحميل الصور  بعد تحميل الصفحة
     window.onload = function() {
         setTimeout(function() {
             document.querySelector(".loading-screen").style.display = "none"; // 
             let gallery = document.querySelector(".loadimage");
-            gallery.style.opacity = "1"; // إظهار الصور تدريجيًا
-        }, 2000); // تأخير لمدة 2000 مللي ثانية = 3 ثوانٍ
+            gallery.style.opacity = "1"; 
+        }, 2000); 
     };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 1000, 
+      once: true, 
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, 
+        spaceBetween: 10,
+        loop: true, 
+        autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: { slidesPerView: 1 }, 
+            768: { slidesPerView: 2 }, 
+            992: { slidesPerView: 3 }  
+        }
+    });
 </script>
 </body>
 </html>

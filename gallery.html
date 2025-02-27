@@ -14,9 +14,9 @@
 </head>
 <style>
        
-    .galleryhome{ background-image: url("images/inner-banner.jpg"); }
+    .galleryphoto{ background-image: url("images/inner-banner.jpg"); }
 
- .galleryhome {
+ .galleryphoto {
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
@@ -31,14 +31,15 @@
 
 }
 
-.galleryhometitle{
+.galleryphototitle{
  color: #fff;
  font-size: 25px;
 }
 
 
  body{
-    background: url("images/black\ background.jpg") center center/cover;
+    /*background: url("images/black\ background.jpg") center center/cover; */
+    background: #eee;
 
  }
 
@@ -61,7 +62,7 @@
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
-            border: 4px solid #fff;
+            border: 4px solid #ee4924;
         }
         .poster { grid-area: poster; height: 750px; }
         .img1 { grid-area: img1; }
@@ -70,6 +71,39 @@
         .img4 { grid-area: img4; }
         .img5 { grid-area: img5; }
         .img6 { grid-area: img6; }
+        
+
+        .gallery-two {
+            display: grid;
+            grid-template-areas: 
+                "poster img1 img2"
+                "poster img3 img4"
+                "poster img5 img6";
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            align-items: stretch;
+            margin-top: 0px;
+        }
+        .gallery-two img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #ee4924;
+        }
+        .poster { grid-area: poster; height: 750px; }
+        .img1 { grid-area: img1; }
+        .img2 { grid-area: img2; }
+        .img3 { grid-area: img3; }
+        .img4 { grid-area: img4; }
+        .img5 { grid-area: img5; }
+        .img6 { grid-area: img6; }
+
+
+
 
         .extra-gallery {
             display: grid;
@@ -84,7 +118,25 @@
             height: 300px;
             object-fit: cover;
             border-radius: 10px;
-            border: 4px solid #fff;
+            border: 4px solid #ee4924;
+
+        }
+         
+        .extra-gallery-two {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+            max-width: 1000px;
+            margin:  auto;
+            margin-top: -70px;
+        }
+        .extra-gallery-two img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #ee4924;
 
         }
 
@@ -101,7 +153,7 @@
             height: 400px;
             object-fit: cover;
             border-radius: 10px;
-            border: 4px solid #fff;
+            border: 4px solid #ee4924;
 
         }
 
@@ -123,20 +175,29 @@
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
-            border: 4px solid #fff;
+            border: 4px solid #ee4924;
 
         }
         .column .large-img {
             height: 415px;
-        }
 
+        }
+        /* responsive */
         @media (max-width: 768px) {
             .extra-gallery img {
             width: 100%;
-            height: 100px;
+            height: 150px;
             object-fit: cover;
             border-radius: 10px;
-            border: 4px solid #fff;
+            border: 4px solid #ee4924;
+
+        }
+        .extra-gallery-two img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 4px solid #ee4924;
 
         }
         .three-column-gallery {
@@ -150,6 +211,9 @@
         .three-column-gallery img {
            width: 100%;
            height: 100%;
+        }
+        .large-gallery img{
+            height: 300px;
         }
              }
 </style>
@@ -173,15 +237,15 @@
       
            
             <div id="phone">
-                <a href="tel:+123456789">+123456789</a>
+                <a href="tel:+201020304050">+201020304050</a>
             </div>
          </header>
     
     
     
-    <section class="galleryhome" id="galleryhome">
+    <section class="galleryphoto" id="galleryphoto">
         <div class="container">
-            <h2 class="h1 galleryhometitle"> معرض الصور</h2>
+            <h2 class="h1 galleryphototitle"> معرض الصور</h2>
            
         </div>
     </section>
@@ -197,31 +261,73 @@
     </div>
     
     <div class="extra-gallery">
-        <img src="images/باربكيو رينج.webp" alt="صورة إضافية 1">
-        <img src="images/سموكد هاوس.webp" alt="صورة إضافية 2">
-        <img src="images/مشروم رانش.jpg" alt="صورة إضافية 3">
-        <img src="images/ريببلك.jpg" alt="صورة إضافية 4">
-        <img src="images/بررجر.jpg" alt="صورة إضافية 5">
-        <img src="images/برجرر.webp" alt="صورة إضافية 6">
+        <img src="images/باربكيو رينج.webp" alt="صورة 1">
+        <img src="images/سموكد هاوس.webp" alt="صورة 2">
+        <img src="images/مشروم رانش.jpg" alt="صورة 3">
+        <img src="images/ريببلك.jpg" alt="صورة 4">
+        <img src="images/بررجر.jpg" alt="صورة 5">
+        <img src="images/برجرر.webp" alt="صورة 6">
     </div>
     
     <div class="large-gallery">
         <img src="images/موهيتو.jpg" alt="صورة كبيرة 1">
-        <img src="images/بنانا كراميل.webp" alt="صورة كبيرة 2">
+        <img src="images/مكس بينك.jpg" alt="صورة كبيرة 2">
     </div>
 
     <div class="three-column-gallery">
         <div class="column">
-            <img src="images/كرانشي.jpg" alt="صورة 1">
-            <img src="images/نفر لحم مندي1.jpg" alt="صورة 2">
+            <img src="images/dinner2.jpg" alt="صورة 1">
+            <img src="images/dinner3.jpg" alt="صورة 2">
         </div>
         <div class="column">
-            <img src="images/نفر لحم مضغوط.webp" alt="صورة كبيرة" class="large-img">
+            <img src="images/ثمن تيس حنيذ.jpg" alt="صورة كبيرة" class="large-img">
 
         </div>
         <div class="column">
-            <img src="images/نصف مندي دجاج.jpg" alt="صورة 3">
-            <img src="images/مندي دجاج.png" alt="صورة 4">
+            <img src="images/نفر لحم مندي.jpg" alt="صورة 3">
+            <img src="images/ثمن تيس مندي.jpg" alt="صورة 4">
+        </div>
+    </div>
+
+    <div class="extra-gallery-two">
+        <img src="images/بسبوسة سادة.webp" alt="صورة 1">
+        <img src="images/اصابع زينب.jpg" alt="صورة 2">
+        <img src="images/كنافة سادة.jpg" alt="صورة 3">
+        <img src="images/كنافة بالفاكهة.webp" alt="صورة 4">
+        <img src="images/بسبوسة بندق.jpg" alt="صورة 5">
+        <img src="images/sweet.png" alt="صورة 6">
+    </div>
+
+    <div class="large-gallery">
+        <img src="images/اسبرسو كون بانا.webp" alt="صورة كبيرة 1">
+        <img src="images/قهوة تركي محوج.jpg" alt="صورة كبيرة 2">
+    </div>
+
+
+    <div class="gallery-two">
+        <img src="images/تورتة كراميل.jpg" alt="بوستر طويل" class="poster">
+        <img src="images/تورتة لوتس.webp" alt="صورة 1" class="img1">
+        <img src="images/تورته فراولة.png" alt="صورة 2" class="img2">
+        <img src="images/تورتة كراميل.png" alt="صورة 3" class="img3">
+        <img src="images/تورتة شوكولاتة بالمانجا.png" alt="صورة 4" class="img4">
+        <img src="images/تورته موس شوكولاتة.png" alt="صورة 5" class="img5">
+        <img src="images/torta1.png" alt="صورة 6" class="img6">
+        
+    </div>
+
+
+    <div class="three-column-gallery">
+        <div class="column">
+            <img src="images/تشيكن باربكيو.png" alt="صورة 1">
+            <img src="images/مرجريتا.png" alt="صورة 2">
+        </div>
+        <div class="column">
+            <img src="images/بانر5.png" alt="صورة كبيرة" class="large-img">
+
+        </div>
+        <div class="column">
+            <img src="images/شاورما لحم.png" alt="صورة 3">
+            <img src="images/تشيكن رانش.png" alt="صورة 4">
         </div>
     </div>
 
@@ -272,7 +378,6 @@
               </ul>
           </div>
   
-          <!-- صندوق الاشتراك ----->
           <div class="footer-section subscribe">
               <h2>اشترك معنا</h2>
               <p>أرسل عنوان بريدك الإلكتروني واتصل بنا لأي استفسارات</p>
